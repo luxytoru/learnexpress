@@ -2,7 +2,7 @@ const express = require('express')
 const app = express();
 app.use(express.static('publik'));
 app.get('/', (req, res) => {
-    res.send('<h1> hahahah </h1>');
+    res.sendFile(__dirname + '/public/index.html');
 })
 
 app.listen(3000, () => {
