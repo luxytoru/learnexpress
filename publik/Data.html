@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: sans-serif;
+        padding: 10px;
+    }
+
+    
+    header {
+        background-image: linear-gradient(216deg, rgba(77, 77, 77,0.05) 0%, rgba(77, 77, 77,0.05) 25%,rgba(42, 42, 42,0.05) 25%, rgba(42, 42, 42,0.05) 38%,rgba(223, 223, 223,0.05) 38%, rgba(223, 223, 223,0.05) 75%,rgba(36, 36, 36,0.05) 75%, rgba(36, 36, 36,0.05) 100%),linear-gradient(44deg, rgba(128, 128, 128,0.05) 0%, rgba(128, 128, 128,0.05) 34%,rgba(212, 212, 212,0.05) 34%, rgba(212, 212, 212,0.05) 57%,rgba(25, 25, 25,0.05) 57%, rgba(25, 25, 25,0.05) 89%,rgba(135, 135, 135,0.05) 89%, rgba(135, 135, 135,0.05) 100%),linear-gradient(241deg, rgba(55, 55, 55,0.05) 0%, rgba(55, 55, 55,0.05) 14%,rgba(209, 209, 209,0.05) 14%, rgba(209, 209, 209,0.05) 60%,rgba(245, 245, 245,0.05) 60%, rgba(245, 245, 245,0.05) 69%,rgba(164, 164, 164,0.05) 69%, rgba(164, 164, 164,0.05) 100%),linear-gradient(249deg, rgba(248, 248, 248,0.05) 0%, rgba(248, 248, 248,0.05) 32%,rgba(148, 148, 148,0.05) 32%, rgba(148, 148, 148,0.05) 35%,rgba(202, 202, 202,0.05) 35%, rgba(202, 202, 202,0.05) 51%,rgba(181, 181, 181,0.05) 51%, rgba(181, 181, 181,0.05) 100%),linear-gradient(92deg, hsl(214,0%,11%),hsl(214,0%,11%));
+        padding: 25px 15px; 
+        margin-bottom: 10px;
+        border-radius: 4px; 
+        
+    }
+
+    header h1 {
+        font-size: 2rem;
+        color: white; 
+    }
+
+    
+    .main-container {
+        display: flex; 
+        margin-bottom: 10px;
+        min-height: 400px; 
+    }
+
+    
+    nav {
+        background-image: repeating-linear-gradient(0deg, rgb(163, 163, 163) 0px, rgb(163, 163, 163) 1px,transparent 1px, transparent 21px),repeating-linear-gradient(90deg, rgb(163, 163, 163) 0px, rgb(163, 163, 163) 1px,transparent 1px, transparent 21px),linear-gradient(90deg, hsl(334,0%,62%),hsl(334,0%,62%));
+        width: 150px; 
+        padding: 15px;
+        margin-right: 10px; 
+        border-radius: 4px; 
+    }
+
+    nav ul {
+        list-style-type: none; 
+    }
+
+    nav ul li {
+        margin-bottom: 8px;
+    }
+
+    nav ul li a {
+        color: #2c3e50; 
+        text-decoration: underline;
+        background: transparent;
+    }
+
+    
+    section {
+        border: 2px solid black; 
+        flex: 1; 
+        padding: 20px;
+        border-radius: 4px;
+    }
+
+    section h3 {
+        margin-bottom: 10px;
+    }
+
+    section .btn-tambah {
+        list-style-type: none;
+        margin-bottom: 15px;
+    }
+
+    
+    footer {
+        background-color: #222222; 
+        padding: 30px 15px; 
+        min-height: 80px; 
+        border-radius: 4px; 
+        color: #ffffff; 
+    }
+
+   
+    table, th, td {
+        border:1px solid black;
+    }
+</style>
+<body>
+
+    
+    <header>
+        <h1>Data</h1>
+    </header>
+
+    
+    <div class="main-container">
+        
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">back to Home</a></li>
+                <li><a href="apalah.html">Alamat</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="youtube.html">Youtube</a></li>
+            </ul>
+        </nav>
+        
+        
+        <section>
+            <h3>Table Data Siswa</h3>
+            <li class="btn-tambah"><a href="inputsiswa.html">Tambah Siswa</a></li>
+            
+            
+            <table style="width:30px height:200px;" > 
+                <colgroup>
+                    <col span="2" style="background-color: lightgray">
+                    <col span="2" style="background-color: cyan">
+                    <col span="3" style="background-color: lightgreen">
+                </colgroup>
+                <tr>
+                    <th rowspan="2">Nomor</th>
+                    <th rowspan="2">NISN</th>
+                    <th rowspan="2">Nama Siswa</th>
+                    <th rowspan="2">Jenis Kelamin</th>
+                    <th colspan="3">Mata Pelajaran</th>
+                </tr>
+                <tr>
+                    <th>Matematika</th>
+                    <th>Bhs.Indo</th>
+                    <th>Ipas</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <th>12345656567</th>
+                    <th>AFuadBush</th>
+                    <th>Laki-laki</th>
+                    <th>85</th>
+                    <th>88</th>
+                    <th>82</th>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <th>123411163</th>
+                    <th>RusdiBush</th>
+                    <th>Laki-laki</th>
+                    <th>87</th>
+                    <th>84</th>
+                    <th>80</th>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <th>12879967</th>
+                    <th>MastuBush</th>
+                    <th>Laki-laki</th>
+                    <th>89</th>
+                    <th>85</th>
+                    <th>82</th>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <th>12453454356</th>
+                    <th>blacktuBush</th>
+                    <th>Laki-laki</th>
+                    <th>83</th>
+                    <th>87</th>
+                    <th>85</th>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <th>1245356435</th>
+                    <th>luxyBush</th>
+                    <th>Laki-laki</th>
+                    <th>77</th>
+                    <th>69</th>
+                    <th>67</th>
+                </tr>
+            </table>
+        </section>
+        
+    </div>
+
+    <!-- [TAMBAHAN 5] Penutup Halaman dengan Footer Gelap -->
+    <footer>
+        thx for read my text
+    </footer>
+
+</body>
+</html>
