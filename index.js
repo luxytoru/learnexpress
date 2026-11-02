@@ -1,11 +1,8 @@
 const express = require('express')
 const app = express();
-
 app.use(express.static('publik'));
-
-
 app.get('/', (req, res) => {
-    res.send('<h1> Hello sier rey </h1>');
+    res.send('<h1> hahahah </h1>');
 })
 
 app.listen(3000, () => {
